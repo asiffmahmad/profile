@@ -447,6 +447,21 @@ button {
     padding-bottom: 10px;
 }
 
+.contact-left h1 {
+    padding-top: 10px;
+}
+
+.contact-left p {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 30px; /* You can adjust the size as needed */
+    color: white;
+}
+#contact-links {
+    padding-top: 10px;
+}
 /* --------------------------------------copy rights ------------------------------------- */
 
 #copy-right {
