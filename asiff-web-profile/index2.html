@@ -22,7 +22,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Service</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li style="display: none"><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -55,26 +55,27 @@
             </div>
             <div class="about-contents active-tab" id="skills">
                 <ul>
-                    <li><span>UI/UX</span><br>Designing web design</li>
-                    <li><span>Java</span><br>Designing web design</li>
-                    <li><span>SQL</span><br>Designing web design</li>
-                    <li><span>HTML</span><br>Designing web design</li>
+                    <li><span>UI/UX</span><br>Create visually appealing and intuitive user interfaces, ensuring an exceptional user experience.</li>
+                    <li><span>Java</span><br>Develop robust and scalable back-end solutions using Java, providing a strong foundation for web applications.</li>
+                    <li><span>SQL</span><br>Optimize data storage and retrieval with expertise in SQL, ensuring efficient and secure database management.</li>
+                    <!-- <li><span>HTML</span><br>Design and structure web content with HTML, delivering a foundation for seamless and responsive web design.</li> -->
                 </ul>
+                
             </div>
             <div class="about-contents" id="experence">
                 <ul>
-                    <li><span>2020</span><br>Experience</li>
-                    <li><span>2021</span><br>Designing web design</li>
-                    <li><span>2022</span><br>Designing web design</li>
-                    <li><span>2023</span><br>Designing web design</li>
+                    <!-- <li><span>2020</span><br>Experience</li> -->
+                    <li><span>2021- Till Now</span><br>Designing web design</li>
+                    <!-- <li><span>2022</span><br>Designing web design</li> -->
+                    <!-- <li><span>2023</span><br>Designing web design</li> -->
                 </ul>
             </div>
             <div class="about-contents" id="education">
                 <ul>
-                    <li><span>UI/UX</span><br>Education</li>
-                    <li><span>Java</span><br>Designing web design</li>
-                    <li><span>SQL</span><br>Designing web design</li>
-                    <li><span>HTML</span><br>Designing web design</li>
+                    <!-- <li><span>UI/UX</span><br>Education</li> -->
+                    <!-- <li><span>Java</span><br>Designing web design</li> -->
+                    <!-- <li><span>SQL</span><br>Designing web design</li> -->
+                    <li><span>2020</span><br>Graduated with a B.tech degree – Bringing a solid educational foundation and a passion for innovative web development.</li>
                 </ul>
             </div>
         </div>
@@ -87,32 +88,26 @@
                 <div>
 
                     <h2>Web Developer</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis culpa consequuntur eaque
-                        accusantium totam atque, dolor dolorum dolores consequatur quibusdam, voluptatem repellendus,
-                        amet delectus? At quos molestias nesciunt aliquam quaerat.</p>
+                    <p>Offer web development services using Java, Spring, HTML, CSS, and JavaScript to create dynamic and responsive websites.</p>
                     <a href="#">learn more</a>
                 </div>
                 <div>
                     
-                    <h2>Java Developer</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis culpa consequuntur eaque
-                        accusantium totam atque, dolor dolorum dolores consequatur quibusdam, voluptatem repellendus,
-                        amet delectus? At quos molestias nesciunt aliquam quaerat.</p>
+                    <h2>Maintenance and Support</h2>
+                    <p>Provide ongoing maintenance and support services for clients who need assistance with existing software applications.</p>
                     <a href="#">learn more</a>
                 </div>
                 <div>
                    
-                    <h2>SQL Developer</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis culpa consequuntur eaque
-                        accusantium totam atque, dolor dolorum dolores consequatur quibusdam, voluptatem repellendus,
-                        amet delectus? At quos molestias nesciunt aliquam quaerat.</p>
+                    <h2>Consulting Services</h2>
+                    <p>Provide consultancy on software architecture, best practices, and technology stack choices for clients embarking on new projects.</p>
                     <a href="#">learn more</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- ------------------------portfolio---------------------- -->
-    <div id="Portfolio">
+    <div id="Portfolio" style="display: none">
         <div class="Portfolio-main">
             <h1 class="Portfolio-title">My work</h1>
             <div class="Portfolio-list">
@@ -157,19 +152,20 @@
             <div class="contact-left">
                 <h1>Contact me!</h1>
                 <p>asiffmahmad9@gmail.com</p>
-                <p>+91 9505721729</p>
+                <!-- <p>+91 9505721729</p> -->
                 <div id="contact-links">
                 <a href="https://github.com/asiffmahmad" target="_blank" class="social-icon" ><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/asiffmahmad/" target="_blank" class="social-icon" ><i class="fa-brands fa-linkedin"></i></a>
             </div>
                 <button type="submit" id="download-cv">
-                    <a href="./images/asiff-cv.pdf"  style="text-decoration: none" download  target="_blank">Download Cv</a>
+                    <a href="./images/New Text Document.txt"  style="text-decoration: none" download  target="_blank">Download Cv</a>
                 </button>                
                 
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet" onsubmit="return validateForm()">
                     <table class="contact-details">
+                       
                         <tr>
                             <td>
                                 <label for="name">Enter Your Name</label>
@@ -197,7 +193,11 @@
         </div>
 
         <div id="copy-right">
-            <h3> <i class="fa-regular fa-copyright"></i> copy rights belongs to asiff </h3>
+            <!-- <h3> <i class="fa-regular fa-copyright"></i> copy rights belongs to asiff </h3> -->
+            <h3 class="copyright">
+                &copy; 2023 Asiff | Crafting digital experiences with passion and precision. ❤️
+              </h3>
+              
     
         </div>
 
@@ -239,6 +239,27 @@
             })
             .catch(error => console.error('Error!', error.message));
     });
+
+    function validateForm() {
+            var email = document.getElementById("email").value;
+            var msg = document.getElementById("msg").value;
+
+            // Check if email is mandatory
+            if (email.trim() === "") {
+                alert("Email is mandatory!");
+                return false;
+            }
+
+            // Check if msg contains special characters
+            var regex = /^[a-zA-Z0-9\s]+$/;
+            if (!regex.test(msg)) {
+                alert("Message cannot contain special characters!");
+                return false;
+            }
+
+            // If all checks pass, the form is submitted
+            return true;
+        }
 </script>
 
 
